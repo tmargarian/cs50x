@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang build active file",
+            "command": "clang",
+            "args": [
+                "-fsanitize=signed-integer-overflow",
+                "-fsanitize=undefined",
+                "-g",
+                "-O0",
+                "-std=c11",
+                "-Wall",
+                "-Werror",
+                "-Wextra",
+                "-Wno-sign-compare",
+                "-Wno-unused-parameter",
+                "-Wno-unused-variable",
+                "-Wshadow",
+                "-lcs50",
+                "-lm",
+                "${fileBasename}",
+                "-o",
+                "${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: /usr/bin/clang"
+        }
+    ]
+}
