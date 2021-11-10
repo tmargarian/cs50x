@@ -1,0 +1,23 @@
+sort1 uses: bubble sort
+
+How do you know?: This algorithm processed the sorted
+list of numbers faster than other two which makes sense
+since bubble sort has a lower bound of Omega(n) of
+complexity compared to Omega(n^2) for selection sort
+and Omega(n log(n)) for merge sort
+
+sort2 uses: merge sort
+
+How do you know?: This is the fastest algorithm that
+processed the random set of numbers, being faster than
+others by an order. That corresponds with O(n log(n))
+complexity of it compared to O(n^2) for selection and
+bubble sort
+
+sort3 uses: selection sort
+
+How do you know?: This algorithm performed the slowest
+when processing random and sorted sets meaning it has
+the worst lower and upper bounds of complexity. That
+makes a case for selection sort which has both O(n^2)
+and Omega(n^2)

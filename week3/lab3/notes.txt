@@ -1,0 +1,37 @@
+###############
+random50000.txt
+###############
+
+sort1:
+real    0m15.125s
+user    0m6.393s
+sys     0m0.096s
+
+sort2:
+real    0m2.905s
+user    0m0.025s
+sys     0m0.100s
+
+sort3:
+real    0m9.451s
+user    0m2.423s
+sys     0m0.072s
+
+###############
+sorted50000.txt
+###############
+
+sort1:
+real    0m2.908s
+user    0m0.029s
+sys     0m0.083s
+
+sort2:
+real    0m5.495s
+user    0m0.025s
+sys     0m0.098s
+
+sort3:
+real    0m8.828s
+user    0m2.470s
+sys     0m0.084s
