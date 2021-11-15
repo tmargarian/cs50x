@@ -20,9 +20,9 @@
                 "-Wshadow",
                 "-lcs50",
                 "-lm",
-                "${fileDirname}/${fileBasename}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}/${fileBasename}"
             ],
             "options": {
                 "cwd": "${fileDirname}"

@@ -9,8 +9,9 @@
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["Alice",
-                     "Bob"],
+            "args": [
+                "card.raw"
+            ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
