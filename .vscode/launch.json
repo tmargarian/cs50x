@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [
-                "card.raw"
+                
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
