@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [
-                
+                "texts/her.txt"
             ],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
