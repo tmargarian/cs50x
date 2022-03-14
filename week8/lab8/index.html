@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+        // TODO: Add code to check answers to questions
+        function q1res(q1_button)
+        {
+            let buttons = ['a1','a2','a3','a4'];
+            if (q1_button.value == "DM")
+            {
+                for (let i = 0; i < 4; i++)
+                {
+                    if (q1_button.id != buttons[i])
+                    {
+                        document.getElementById(buttons[i]).style.background = "";
+                    }
+                }
+                if (q1_button.style.background == '')
+                {
+                    q1_button.style.background = "green";
+                    document.getElementById("correct").style.display = "block";
+                    document.getElementById("incorrect").style.display = "none";
+                }
+                else
+                {
+                    q1_button.style.background = '';
+                    document.getElementById("correct").style.display = "none";
+                }
+            }
+            else
+            {
+                for (let i = 0; i < 4; i++)
+                {
+                    if (q1_button.id != buttons[i])
+                    {
+                        document.getElementById(buttons[i]).style.background = "";
+                    }
+                }
+                if (q1_button.style.background == '')
+                {
+                    q1_button.style.background = "red";
+                    document.getElementById("correct").style.display = "none";
+                    document.getElementById("incorrect").style.display = "block";
+                }
+                else
+                {
+                    q1_button.style.background = '';
+                    document.getElementById("incorrect").style.display = "none";
+                }
+            }
+        }
+
+        function q2res()
+        {
+            let q2ans = document.querySelector('#q2').value;
+            if (q2ans == 'Mercedes')
+            {
+                document.getElementById('q2').style.background = "green";
+                document.getElementById("correct2").style.display = "block";
+                document.getElementById("incorrect2").style.display = "none";
+            }
+            else
+            {
+                document.getElementById('q2').style.background = "red";
+                document.getElementById("correct2").style.display = "none";
+                document.getElementById("incorrect2").style.display = "block";
+            }
+        }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the name of the CS50x instructor (choose one)?</h3>
+                <button type="button" value="MJ" id="a1" onclick="q1res(this)">Michael Jackson </button>
+                <button type="button" value="DM" id="a2" onclick="q1res(this)">David J. Malan</button>
+                <button type="button" value="DT" id="a3" onclick="q1res(this)">Donald J. Trump</button>
+                <button type="button" value="TB" id="a4" onclick="q1res(this)">Tom Bradley</button>
+                <p id='correct' style='display: none'>Correct!</p>     
+                <p id='incorrect' style='display: none'>Incorrect</p>     
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>Which of the existing car makes tracks its hisory back into 19th century?</h3>
+                <input id="q2" type="text" placeholder="Type your answer here">
+                <input type="submit" onclick="q2res()" value="Check Answer">
+                <p id='correct2' style='display: none'>Correct!</p>     
+                <p id='incorrect2' style='display: none'>Incorrect</p>     
+            </div>
+
+        </div>
+    </body>
+</html>
